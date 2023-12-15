@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">FORAMAPS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink=""  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" >Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="menu" routerLinkActive="active-link">Ofertas de alquiler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="esArrendador" routerLink="romies" routerLinkActive="active-link">Roommate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="esArrendador" routerLink="contact" routerLinkActive="active-link">Publicar alquiler</a>
+          </li>
+          <li class="nav-item" (click)="logout()">
+            <a class="nav-link"  routerLink="login" routerLinkActive="active-link"> {{ getLogoutText() }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

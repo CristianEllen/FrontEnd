@@ -1,0 +1,77 @@
+
+.stepBox 
+{
+    background-color: #F2BB13;
+    padding: 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.stepBox p 
+{
+    font-size: 27px;
+    font-style: italic;
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.highlight
+{
+
+    color: var(--primary, #F2BB13);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+.foodbox 
+{
+    padding: 10px 10px;
+} 
+.foodbox img
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.foodbox h1 
+{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.buybtn
+{
+
+    color: #000;
+    background-color: var(--primary, #F2BB13);
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+  }
+  
+  .badge-success {
+    color: #fff;
+    background-color: #28a745;
+  }
+  
+  .badge-danger {
+    color: #fff;
+    background-color: #dc3545;
+  }

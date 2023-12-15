@@ -1,0 +1,194 @@
+{
+  "foodDetails": [
+    {
+      "id": 1,
+      "titulo": "test",
+      "descripcion": "",
+      "num_banios": "",
+      "num_habitaciones": "",
+      "mascotas": "",
+      "detallecontacto": "",
+      "precio": 0,
+      "imagenreferencial": "https://firebasestorage.googleapis.com/v0/b/cmac-92e96.appspot.com/o/ofertas%2F82779773528036653990601010846246497849882014674593726336751226422769453113398.jpg_1702612981929?alt=media&token=1941e879-86e5-48ea-8ef5-65839b7f53ab",
+      "fechaCreacion": "2023-12-15T04:06:19.111Z",
+      "disponible": "",
+      "valoracion": 0,
+      "status": 0
+    },
+    {
+      "id": 2,
+      "titulo": "dsadasd",
+      "descripcion": "",
+      "num_banios": "",
+      "num_habitaciones": "",
+      "mascotas": "",
+      "detallecontacto": "",
+      "precio": 0,
+      "imagenreferencial": "https://firebasestorage.googleapis.com/v0/b/cmac-92e96.appspot.com/o/ofertas%2Fdsdsdsdsd.jpeg_1702650338934?alt=media&token=c8a08590-45ff-4c00-8427-3468bd0c7706",
+      "fechaCreacion": "2023-12-15T14:25:50.058Z",
+      "disponible": "",
+      "valoracion": 0,
+      "status": 0
+    },
+    {
+      "id": 3,
+      "titulo": "dsadasd",
+      "descripcion": "",
+      "num_banios": "",
+      "num_habitaciones": "",
+      "mascotas": "",
+      "detallecontacto": "",
+      "precio": 0,
+      "imagenreferencial": "https://firebasestorage.googleapis.com/v0/b/cmac-92e96.appspot.com/o/ofertas%2FDisenos-de-Casas-Modernas-Interiores-y-Exteriores.jpeg_1702650406879?alt=media&token=da73c96b-dcf4-4f5d-ab18-dd2933572bd7",
+      "fechaCreacion": "2023-12-15T14:26:58.865Z",
+      "disponible": "true",
+      "valoracion": 0,
+      "status": 0
+    },
+    {
+      "id": 4,
+      "titulo": "test 22222",
+      "descripcion": "",
+      "num_banios": "",
+      "num_habitaciones": "",
+      "mascotas": "",
+      "detallecontacto": "",
+      "precio": 0,
+      "imagenreferencial": "https://firebasestorage.googleapis.com/v0/b/cmac-92e96.appspot.com/o/ofertas%2FDisenos-de-Casas-Modernas-Interiores-y-Exteriores.jpeg_1702652388765?alt=media&token=53d6c37d-3e63-4567-bf25-156da2a95a68",
+      "fechaCreacion": "2023-12-15T15:00:04.777Z",
+      "disponible": "true",
+      "valoracion": 0,
+      "status": 0
+    }
+  ],
+  "login": [
+    {
+      "usuario": "neisser261995@gmail.com",
+      "contrasena": "Tester123.",
+      "nombres": "Neisser Arilson",
+      "apellidos": "Moreno Sanchez",
+      "celular": 929552761,
+      "esArrendador": true,
+      "esEstudiante": false,
+      "id": 1
+    },
+    {
+      "usuario": "soto@gmail.com",
+      "contrasena": "123456",
+      "nombres": "Juan José",
+      "apellidos": "Soto Perez",
+      "celular": 123654789,
+      "esArrendador": false,
+      "esEstudiante": true,
+      "id": 2
+    },
+    {
+      "usuario": "soto1@gmail.com",
+      "contrasena": "123456",
+      "nombres": "Soto1",
+      "apellidos": "test",
+      "celular": 123654,
+      "esArrendador": false,
+      "esEstudiante": true,
+      "id": 3
+    },
+    {
+      "usuario": "jair@gmail.com",
+      "contrasena": "123456",
+      "nombres": "Jair",
+      "apellidos": "Moreno G.",
+      "celular": 23658965,
+      "esArrendador": false,
+      "esEstudiante": true,
+      "id": 4
+    }
+  ],
+  "romies": [
+    {
+      "id": 1,
+      "nombre": "Luis Alberto Mendoza Gonzales",
+      "edad": 19,
+      "sexo": "Hombre",
+      "universidad": "Universidad Nacional de Trujillo",
+      "carrera": "Ingeniería de Sistemas",
+      "contacto": "937539285",
+      "img": "https://previews.123rf.com/images/djoronimo/djoronimo1609/djoronimo160900107/63826380-estudiante-universitario-pensativo-est%C3%A1-aprendiendo-en-la-biblioteca.jpg",
+      "fechaCreacion": "2023-10-20T15:30:00Z"
+    },
+    {
+      "id": 2,
+      "nombre": "Maria Mendoza Gonzales",
+      "edad": 20,
+      "sexo": "Hombre",
+      "universidad": "Universidad Nacional de Trujillo",
+      "carrera": "Ingeniería Industrial",
+      "contacto": "937539285",
+      "img": "https://previews.123rf.com/images/arekmalang/arekmalang1208/arekmalang120800023/14936513-una-foto-de-un-estudiante-universitario-hisp%C3%A1nico-estudiar-en-el-campus.jpg",
+      "fechaCreacion": "2023-10-21T15:30:00Z"
+    },
+    {
+      "id": 3,
+      "nombre": "Alejandra Medina Soto",
+      "edad": 22,
+      "sexo": "Mujer",
+      "universidad": "Universidad Cesar Vallejo",
+      "carrera": "Ingeniería de Sistemas",
+      "contacto": "937539285",
+      "img": "https://icorp.com.mx/wp-content/uploads/2020/04/Beneficios-de-incluir-a-estudiantes-en-tu-empresa-copia.webp",
+      "fechaCreacion": "2023-10-22T15:30:00Z"
+    },
+    {
+      "id": 4,
+      "nombre": "Darly Bryan Medina Alcaide",
+      "edad": 22,
+      "sexo": "Hombre",
+      "universidad": "Universidad Privada Antenor Orrego",
+      "carrera": "Educación Inicial",
+      "contacto": "93365412",
+      "img": "https://thumbs.dreamstime.com/z/estudiante-universitario-sonriente-en-sala-de-clase-de-la-universidad-65967670.jpg",
+      "fechaCreacion": "2023-10-23T15:30:00Z"
+    }
+  ],
+  "selecciones": [
+    {
+      "usuarioId": 2,
+      "habitacionId": 1,
+      "id": 1
+    },
+    {
+      "usuarioId": 3,
+      "habitacionId": 1,
+      "id": 2
+    },
+    {
+      "usuarioId": 2,
+      "habitacionId": 3,
+      "id": 3
+    },
+    {
+      "usuarioId": 2,
+      "habitacionId": 3,
+      "id": 4
+    }
+  ],
+  "valoraciones": [
+    {
+      "id": "0eb5ba7f-d451-4805-9483-b42542cb9a69",
+      "usuarioId": 2,
+      "habitacionId": 1,
+      "valoracion": 3
+    },
+    {
+      "id": "2c50d84c-5dc7-47d1-ab35-b7ead3748337",
+      "usuarioId": 3,
+      "habitacionId": 1,
+      "valoracion": 1
+    },
+    {
+      "id": "214549ed-29d7-4e21-b313-3e3b6cafca80",
+      "usuarioId": 2,
+      "habitacionId": 3,
+      "valoracion": 4
+    }
+  ]
+}

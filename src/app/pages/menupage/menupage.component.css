@@ -1,0 +1,62 @@
+.imagen-oferta {
+    border-radius: 8px;
+  }
+  
+  .imagen-oferta {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .imagen-oferta {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .imagen-oferta:hover {
+    transform: scale(1.05);
+  }
+
+  .imagen-container {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 80%;
+    width: 80%;
+    padding: 10px;
+  }
+  
+  .imagen-oferta {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .imagen-container.loaded {
+    opacity: 1;
+  }
+
+  .star {
+    font-size: 2em;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .star.filled {
+    color: gold;
+  }
+  
+
+  .fas.fa-star {
+    font-size: 1.5em;
+    color: gold;
+  }
+  
+  .fas.fa-star-half-alt {
+    font-size: 1.5em;
+    color: gold;
+  }
+
+@media screen and (max-width:600px) {
+    form 
+    {
+        width: 100%;
+    }
+}
+

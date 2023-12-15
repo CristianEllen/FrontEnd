@@ -1,0 +1,41 @@
+/*Boton*/
+
+/* button {
+    background-color: #B1B1B1;
+    color: #ccc;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 15px
+    ;
+  }
+  
+  button:hover {
+    background-color: #F2BB13;
+  } */
+
+  .custom-file-upload {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .custom-file-upload i {
+    margin-right: 5px;
+  }
+  
+  #fileInput {
+    display: none;
+  }
+  
+  span {
+    margin-left: 10px;
+  }
+  
+  

@@ -1,0 +1,65 @@
+body{
+  background-image: url('../../../assets/img/loginimg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  /* height: 570px;
+  margin: 0 auto; */
+}
+
+.login-container {
+  max-width: 450px;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  margin-left: 65%;
+  /* margin-top: 150px; */
+}
+
+/*Formulario de inicio de sesión*/
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+/*Entradas usuario y contraseña*/
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/*Boton*/
+button {
+  background-color: #B1B1B1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #F2BB13;
+}
+
+/*direción a resgitrarse*/
+.register-link{
+  margin-top: 20px;
+}
+
+ div a {
+  color: #007bff; 
+  text-decoration: underline; 
+  cursor: pointer; 
+}
+
+ div a:hover {
+  text-decoration: underline;
+}
+
+div a:active {
+  color: #ff0000;
+}

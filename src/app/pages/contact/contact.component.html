@@ -1,0 +1,84 @@
+<div class="container mt-3 mb-3">
+    <button type="button" (click)="goBack()" class="btn btn-dark">Atrás</button>
+    <div class=" p-1  mt-3">
+        <h1>Agregar nuevo alquiler</h1>
+        <form class="col-lg-8">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-6 mt-2 mb-2">
+                        <p>Título de publicación</p>
+                        <input type="text" class="form-control" name="foodName" id="foodName"
+                            [(ngModel)]="oferta.titulo" placeholder="Ingresar Titulo">
+                    </div>
+                    <div class="col-lg-6 mt-2 mb-2">
+                        <p>Descripción</p>
+                        <input type="text" class="form-control" name="foodDetails" [(ngModel)]="oferta.descripcion"
+                            placeholder="Ingresar Descripción">
+                    </div>
+                    <div class="col-lg-6 mt-2 mb-2">
+                        <p>N° de habitaciones</p>
+                        <input type="number" class="form-control" name="detallehabitaciones"
+                            [(ngModel)]="oferta.num_habitaciones" placeholder="Ingresar N° de Habitaciones">
+                    </div>
+                    <div class="col-lg-6 mt-2 mb-2">
+                        <p>N° de baños</p>
+                        <input type="number" class="form-control" name="detallebanos" [(ngModel)]="oferta.num_banios"
+                            placeholder="Ingresar el N° de baños">
+                    </div>
+                    <div class="col-lg-6 mt-2 mb-2">
+                        <p>N° de contacto</p>
+                        <input type="number" class="form-control" name="detallecontacto"
+                            [(ngModel)]="oferta.detallecontacto" placeholder="Ingresar el N° de contacto">
+                    </div>
+                    <div class="col-lg-6 mt-2 mb-2">
+                        <p>¿Se aceptaran mascotas?</p>
+                        <input type="text" class="form-control" name="detallemascotas" [(ngModel)]="oferta.mascotas"
+                            placeholder="SI/NO">
+                    </div>
+                    <div class="col-lg-6 mt-2 mb-2">
+                        <p>Precio</p>
+                        <input type="number" class="form-control" name="foodPrice" [(ngModel)]="oferta.precio"
+                            placeholder="Ingresar Precio">
+                    </div>
+                    <div class="col-lg-6 mt-5 d-flex align-items-center">
+                        <p class="mt-2 text-danger" style="margin-right: 5px;">¿Está disponible?</p>
+                        <div class="d-flex align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="disponible" id="disponibleSi"
+                                    [(ngModel)]="oferta.disponible" value="true" required>
+                                <label class="form-check-label" for="disponibleSi">
+                                    Si
+                                </label>
+                            </div>
+                            <div class="form-check" style="margin-left: 8px;">
+                                <input class="form-check-input" type="radio" name="disponible" id="disponibleNo"
+                                    [(ngModel)]="oferta.disponible" value="false" required>
+                                <label class="form-check-label" for="disponibleNo">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <br>
+                        <label for="fileInput" class="custom-file-upload">
+                            <i class="bi bi-arrow-bar-up"></i> Seleccionar imagen
+                        </label>
+
+                        <input type="file" accept=".png, .jpg, .jpeg" id="fileInput"
+                            (change)="onFileSelected($event)" />
+                        <!-- Spinner de carga -->
+
+                        <p *ngIf="cargando" class="mt-2 text-primary">Cargando, obteniendo la URL....</p>
+
+                        <span *ngIf="!cargando" class="mt-2">{{ selectedFileName }}</span>
+                    </div>
+                    <div class="col-lg-12">
+                        <br>
+                        <button type="button" (click)="publicar($event)" class="btn btn-warning">Publicar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

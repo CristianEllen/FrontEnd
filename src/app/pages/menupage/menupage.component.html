@@ -1,0 +1,91 @@
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-6">
+      <div *ngIf="oferta">
+        <div class="imagen-container">
+          <img [src]="oferta.imagenreferencial" class="imagen-oferta" (load)="fadeIn()">
+        </div>
+
+        <h2>{{ oferta.titulo }}</h2>
+        <p><strong>N° de Baños: </strong>{{ oferta.num_banios }}</p>
+        <p><strong>N° de Habitaciones:</strong> {{ oferta.num_habitaciones }}</p>
+        <p><strong>Mascotas:</strong> {{oferta.mascotas}} </p>
+        <p><strong>Contacto:</strong> {{ oferta.detallecontacto }}</p>
+        <p><strong>Precio:</strong> S/ {{ oferta.precio}}</p>
+        <p><strong>Fecha de Publicación:</strong> {{ oferta.fechaCreacion | date}}</p>
+
+
+        <div>
+          <div class="rating">
+            <strong> Valoración Propia: </strong>
+            <span class="star" (click)="valorar(1)" [class.filled]="valoracion >= 1">&#9733;</span>
+            <span class="star" (click)="valorar(2)" [class.filled]="valoracion >= 2">&#9733;</span>
+            <span class="star" (click)="valorar(3)" [class.filled]="valoracion >= 3">&#9733;</span>
+            <span class="star" (click)="valorar(4)" [class.filled]="valoracion >= 4">&#9733;</span>
+            <span class="star" (click)="valorar(5)" [class.filled]="valoracion >= 5">&#9733;</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="rating">
+            <strong> Valoración Total: </strong>
+            <i class="fas fa-star" *ngIf="valoracionPromedio >= 1"></i>
+            <i class="fas fa-star-half-alt" *ngIf="valoracionPromedio > 0 && valoracionPromedio < 1"></i>
+            <i class="fas fa-star" *ngIf="valoracionPromedio >= 2"></i>
+            <i class="fas fa-star-half-alt" *ngIf="valoracionPromedio > 1 && valoracionPromedio < 2"></i>
+            <i class="fas fa-star" *ngIf="valoracionPromedio >= 3"></i>
+            <i class="fas fa-star-half-alt" *ngIf="valoracionPromedio > 2 && valoracionPromedio < 3"></i>
+            <i class="fas fa-star" *ngIf="valoracionPromedio >= 4"></i>
+            <i class="fas fa-star-half-alt" *ngIf="valoracionPromedio > 3 && valoracionPromedio < 4"></i>
+            <i class="fas fa-star" *ngIf="valoracionPromedio >= 5"></i>
+            <i class="fas fa-star-half-alt" *ngIf="valoracionPromedio > 4 && valoracionPromedio < 5"></i>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-dark" (click)="goBack()">Volver</button>
+
+      <div *ngIf="!oferta">
+        <p>No se encontraron detalles de la oferta.</p>
+      </div>
+    </div>
+
+
+    <div class="col-6">
+      <div *ngIf="!(esEstudiante || esArrendador)">
+        <div class="alert alert-warning" role="alert">
+          ¡Debes iniciar sesión como estudiante o arrendador para ver la lista de los interesados!
+        </div>
+        <img src="./assets/img/none.png" alt="no encontrado" style="height: auto; width: 100%;">
+      </div>
+
+      <div *ngIf="esEstudiante || esArrendador">
+        <h2> Lista de Interesados</h2>
+        <div *ngIf="hayInteresados; else noInteresados">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombres</th>
+                <th scope="col">Celular</th>
+                <th scope="col">Correo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let usuario of usuarios; index as i">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ usuario.nombres }} {{ usuario.apellidos}}</td>
+                <td>{{ usuario.celular }}</td>
+                <td>{{ usuario.usuario }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <ng-template #noInteresados>
+        <div class="alert alert-info" role="alert">
+          <h4>No hay usuarios interesados en esta habitación. </h4>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
